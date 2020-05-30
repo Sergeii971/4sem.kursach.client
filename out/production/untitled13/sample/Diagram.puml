@@ -1,0 +1,22 @@
+@startuml
+class AccountManagingInterface
+class AdminInterface
+class AuthorizationInterface
+class ChangeAdminDataInterface
+class Check
+class Client
+class Method
+class InformationWindows
+class RegistrationInterface
+class RespondApplicationInterface
+class ResultInterface
+class ShowApplicationsInterface
+class ShowUsersInterface
+class SubmitApplicationInterface
+class ThenInterface
+class UserInterface
+class WatchAnswersInterface
+class User
+class Application
+
+@enduml

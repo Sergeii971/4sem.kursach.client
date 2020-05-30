@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="730.0" prefWidth="900.0" style="-fx-background-color: #2F4F4F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SubmitApplicationInterface">
+   <children>
+      <Button fx:id="buttonExitSubmitApplication" layoutX="294.0" layoutY="633.0" mnemonicParsing="false" onAction="#exitSubmitApplication" prefHeight="32.0" prefWidth="312.0" style="-fx-background-color: #F0FFF0;" text="Вернуться назад" textFill="DARKSLATEGRAY">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="buttonSave" layoutX="294.0" layoutY="583.0" mnemonicParsing="false" onAction="#saveSubmit" prefHeight="32.0" prefWidth="312.0" style="-fx-background-color: #F0FFF0;" text="Сохранить" textFill="DARKSLATEGRAY">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="textFieldName" layoutX="293.0" layoutY="48.0" prefHeight="38.0" prefWidth="312.0" promptText="Имя" style="-fx-background-color: #F0FFF0;">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldSurname" layoutX="294.0" layoutY="125.0" prefHeight="38.0" prefWidth="312.0" promptText="Фамилия" style="-fx-background-color: #F0FFF0;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldBrand" layoutX="294.0" layoutY="202.0" prefHeight="38.0" prefWidth="312.0" promptText="Марка " style="-fx-background-color: #F0FFF0;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldYearRelease" layoutX="293.0" layoutY="346.0" prefHeight="38.0" prefWidth="312.0" promptText="Год выпуска" style="-fx-background-color: #F0FFF0;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldModel" layoutX="293.0" layoutY="269.0" prefHeight="38.0" prefWidth="312.0" promptText="Модель" style="-fx-background-color: #F0FFF0;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldVINNumber" layoutX="293.0" layoutY="418.0" prefHeight="38.0" prefWidth="312.0" promptText="VIN номер" style="-fx-background-color: #F0FFF0;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+      <TextField fx:id="textFieldRegistrationNumber" layoutX="293.0" layoutY="500.0" prefHeight="38.0" prefWidth="312.0" promptText="Регистрационный номер " style="-fx-background-color: #F0FFF0;">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></TextField>
+   </children>
+</AnchorPane>

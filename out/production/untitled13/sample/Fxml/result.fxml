@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="730.0" prefWidth="900.0" style="-fx-background-color: #2F4F4F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultInterface">
+   <children>
+      <TableView fx:id="tableResult" layoutX="4.0" layoutY="4.0" prefHeight="289.0" prefWidth="892.0">
+        <columns>
+          <TableColumn fx:id="columnService" prefWidth="436.79996967315674" text="услуга" />
+          <TableColumn fx:id="columnVariantNumber" prefWidth="454.40008544921875" text="коэффициент препочительности вариантов" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textFieldR2" layoutX="228.0" layoutY="430.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldR3" layoutX="395.0" layoutY="429.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldR4" layoutX="568.0" layoutY="429.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldR5" layoutX="726.0" layoutY="429.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldR1" layoutX="70.0" layoutY="430.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldD1" layoutX="70.0" layoutY="509.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldD2" layoutX="228.0" layoutY="509.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldD3" layoutX="395.0" layoutY="509.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldD4" layoutX="568.0" layoutY="509.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldD5" layoutX="726.0" layoutY="509.0" prefHeight="26.0" prefWidth="110.0" />
+      <Button fx:id="buttonOk" layoutX="225.0" layoutY="574.0" mnemonicParsing="false" onAction="#exitResultInterface" prefHeight="26.0" prefWidth="226.0" style="-fx-background-color: #F0FFF0;" text="ОК">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="buttonSendUserResult" layoutX="477.0" layoutY="574.0" mnemonicParsing="false" onAction="#sendUserResult" prefHeight="26.0" prefWidth="226.0" style="-fx-background-color: #F0FFF0;" text="Отправить результат клиенту" textFill="DARKSLATEGRAY">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Label layoutX="354.0" layoutY="396.0" prefHeight="18.0" prefWidth="270.0" text="Оценки компетентности экспертов" textFill="HONEYDEW" />
+      <Label layoutX="34.0" layoutY="434.0" prefHeight="18.0" prefWidth="18.0" text="r1" textFill="HONEYDEW" />
+      <Label layoutX="200.0" layoutY="434.0" prefHeight="18.0" prefWidth="18.0" text="r2" textFill="HONEYDEW" />
+      <Label layoutX="367.0" layoutY="434.0" prefHeight="18.0" prefWidth="18.0" text="r3" textFill="HONEYDEW" />
+      <Label layoutX="534.0" layoutY="434.0" prefHeight="18.0" prefWidth="18.0" text="r4" textFill="HONEYDEW" />
+      <Label layoutX="695.0" layoutY="434.0" prefHeight="18.0" prefWidth="18.0" text="r5" textFill="HONEYDEW" />
+      <Label layoutX="374.0" layoutY="477.0" prefHeight="18.0" prefWidth="216.0" text="Дисперсия оценок экспертов" textFill="HONEYDEW" />
+      <Label layoutX="24.0" layoutY="513.0" text="Dr1" textFill="HONEYDEW" />
+      <Label layoutX="199.0" layoutY="513.0" text="Dr2" textFill="HONEYDEW" />
+      <Label layoutX="364.0" layoutY="513.0" text="Dr3" textFill="HONEYDEW" />
+      <Label layoutX="533.0" layoutY="513.0" text="Dr4" textFill="HONEYDEW" />
+      <Label layoutX="694.0" layoutY="513.0" text="Dr5" textFill="HONEYDEW" />
+      <Button fx:id="buttonСonclusion" layoutX="352.0" layoutY="620.0" mnemonicParsing="false" onAction="#showConclusion" prefHeight="26.0" prefWidth="226.0" style="-fx-background-color: #F0FFF0;" text="Показать вывод" textFill="DARKSLATEGRAY">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <TextField fx:id="textFieldDck1" layoutX="70.0" layoutY="352.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldDck2" layoutX="228.0" layoutY="352.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldDck3" layoutX="396.0" layoutY="352.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldDck4" layoutX="566.0" layoutY="352.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="textFieldDck5" layoutX="726.0" layoutY="352.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label layoutX="364.0" layoutY="314.0" prefHeight="18.0" prefWidth="270.0" text="Дисперсия оценок вариантов" textFill="HONEYDEW" />
+      <Label layoutX="29.0" layoutY="357.0" text="Dck1" textFill="HONEYDEW" />
+      <Label layoutX="187.0" layoutY="357.0" text="Dck2" textFill="HONEYDEW" />
+      <Label layoutX="354.0" layoutY="357.0" text="Dck3" textFill="HONEYDEW" />
+      <Label layoutX="529.0" layoutY="357.0" text="Dck4" textFill="HONEYDEW" />
+      <Label layoutX="691.0" layoutY="357.0" text="Dck5" textFill="HONEYDEW" />
+   </children>
+</AnchorPane>

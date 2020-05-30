@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="730.0" prefWidth="900.0" style="-fx-background-color: #2F4F4F;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ShowApplicationsInterface">
+   <children>
+      <TableView fx:id="applicationTable" prefHeight="598.0" prefWidth="1100.0">
+        <columns>
+          <TableColumn fx:id="columnName" prefWidth="140.79998475313187" text="Имя клиента" />
+          <TableColumn fx:id="columnSurname" prefWidth="177.6000213623047" text="Фамилия клиента" />
+            <TableColumn fx:id="columnYearRelease" prefWidth="112.79998779296875" text="Год выпуска" />
+            <TableColumn fx:id="columnCarBrand" prefWidth="133.60000610351562" text="Марка" />
+            <TableColumn fx:id="columnCarModel" prefWidth="142.4000244140625" text="Модель" />
+            <TableColumn fx:id="columnVinNumber" minWidth="0.0" prefWidth="185.60003662109375" text="VIN №" />
+            <TableColumn fx:id="columnRegistrationNumber" prefWidth="191.19989013671875" text="Регистрационный №" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonExitShowApplications" layoutX="916.0" layoutY="634.0" mnemonicParsing="false" onAction="#exitShowApplications" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: #F0FFF0;" text="Вернуться назад" textFill="DARKSLATEGRAY">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="buttonRespondApplication" layoutX="417.0" layoutY="634.0" mnemonicParsing="false" onAction="#respondApplication" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F0FFF0;" text="Ответить" textFill="DARKSLATEGRAY">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <TextField fx:id="textFieldSearch" layoutX="30.0" layoutY="634.0" onAction="#search" prefHeight="26.0" prefWidth="190.0" />
+      <Label layoutX="30.0" layoutY="598.0" prefHeight="26.0" prefWidth="190.0" text="Введите фамилию клиента:" textAlignment="CENTER" textFill="HONEYDEW" />
+      <Button fx:id="buttonDeleteApplication" layoutX="750.0" layoutY="634.0" mnemonicParsing="false" onAction="#deleteApplication" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #F0FFF0;" text="Удалить" textFill="DARKSLATEGRAY">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="buttonSave" layoutX="585.0" layoutY="634.0" mnemonicParsing="false" onAction="#saveApplications" prefHeight="26.0" prefWidth="133.0" style="-fx-background-color: #F0FFF0;" text="Сохранить" textFill="DARKSLATEGRAY">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+      <Button fx:id="buttonShowAllApplication" layoutX="235.0" layoutY="634.0" mnemonicParsing="false" onAction="#showAllApplication" prefHeight="26.0" prefWidth="158.0" style="-fx-background-color: #F0FFF0;" text="показать все заявки" textFill="DARKSLATEGRAY">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
